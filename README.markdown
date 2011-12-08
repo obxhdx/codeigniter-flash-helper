@@ -14,4 +14,4 @@ This function sets a flash variable with a value you specify. If you use flash v
 
 ## Installation
 
-Just copy the file to `<path_to_your_CI_app>/system/helpers`.
+Just copy the helper file to `<path_to_your_CI_app>/system/helpers` and enable it in `<path_to_your_CI_app>/application/config/autoload.php`.
