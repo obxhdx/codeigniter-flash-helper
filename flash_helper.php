@@ -23,7 +23,8 @@
  * @package     CodeIgniter
  * @subpackage  Helpers
  * @category    Helpers
- * @author      Chris Monnat
+ * @author      Chris Monnat (https://github.com/mrtopher)
+ * @commiter    Obedi Ferreira (https://github.com/obxhdx)
  * @link        http://www.christophermonnat.com/2009/05/building-applications-using-codeigniter-part-3-helpers/
  */
 

@@ -1,5 +1,7 @@
 # codeigniter-flash-helper
 
+[Original file](http://www.christophermonnat.com/2009/05/building-applications-using-codeigniter-part-3-helpers/) by [Chris Monnat](https://github.com/mrtopher).
+
 ## Methods
 
 ### display_flash($name)
