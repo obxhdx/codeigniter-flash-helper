@@ -53,12 +53,15 @@ function display_flash($name)
  * @param string
  * @param string
  * @param string
- * @return string
+ * @param boolean
  */
-function set_flash($name, $type, $msg)
+function set_flash($name, $message_type, $message, $redirect=FALSE)
 {
   $CI =& get_instance();
-  $CI->session->set_flashdata($name, array('type' => $type, 'msg' => $msg));
+  $CI->session->set_flashdata($name, array('message_type' => $message_type, 'message' => $message));
+
+  if ($redirect)
+    redirect($redirect);
 }
 
 /* End of file flash_helper.php */
