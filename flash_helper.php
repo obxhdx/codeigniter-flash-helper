@@ -32,7 +32,7 @@
  * Display formatted flash message.
  *
  * @access public
- * @param string
+ * @param string|array
  * @return string
  */
 function display_flash($name)
@@ -42,7 +42,18 @@ function display_flash($name)
   if($CI->session->flashdata($name))
   {
     $flash = $CI->session->flashdata($name);
-    return '<div id="' . $flash['type'] . '">' . $flash['msg'] . '</div>';
+
+    if (is_array($flash['message'])) {
+      $msg = '<div class="' . $flash['message_type'] . '">';
+
+      foreach ($flash['message'] as $flash_message) {
+        $msg .= $flash_message . '<br />';
+      }
+
+      return $msg . '</div>';
+    } else {
+      return '<div class="' . $flash['message_type'] . '">' . $flash['message'] . '</div>';
+    }
   }
 }
 
